@@ -114,7 +114,7 @@ def run():
             predictions.append(prediction[0])
 
     labels = labels_in_order(dset_name='human_enhancers_cohn')
-    print('F1 (macro): {0:.2f}'.format(f1_score(labels, predictions, average='macro')))
+    print('F1: {0:.2f}'.format(f1_score(labels, predictions)))
 
 
 if __name__ == '__main__':
